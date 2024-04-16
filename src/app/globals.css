@@ -2,28 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  * {
+    @apply text-balance;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  main {
+    @apply min-h-[calc(100vh-3.25rem)] md:min-h-[calc(100vh-4.25rem)] py-2 md:py-4;
+  }
+  section + section {
+    @apply mt-5;
+  }
+  h1 {
+    @apply text-2xl text-center mb-3;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  p {
+    @apply font-light;
+  }
 }
 
 @layer utilities {
@@ -31,3 +28,59 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .mesh-gradient-container {
+    @apply fixed -z-10 w-full h-screen max-w-screen-xl left-1/2 transform -translate-x-1/2;
+  }
+  .mesh-gradient {
+    @apply opacity-25 rounded-full blur-3xl size-96 md:size-128 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+}
+
+.card--glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes shine {
+  0% {
+    transform: rotate(30deg) translateX(-200%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(30deg) translateX(200%);
+    opacity: 0;
+  }
+}
+
+/* .shine::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.05)
+  );
+  opacity: 0.8;
+  transform: rotate(30deg);
+  animation: shine 3s infinite;
+}
+ */
