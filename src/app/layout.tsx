@@ -23,7 +23,7 @@ export default function RootLayout({
         {/* <div className="w-px bg-red-900 h-screen fixed z-10 left-1/2 top-0 transform -translate-x-1/2" /> */}
         <MeshGradientBackground />
         <Header />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

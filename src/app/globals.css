@@ -2,15 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   * {
     @apply text-balance;
   }
+
   main {
-    @apply min-h-[calc(100vh-3.25rem)] md:min-h-[calc(100vh-4.25rem)] py-2 md:py-4;
+    @apply mt-2 md:mt-[3.25rem];
   }
-  section + section {
-    @apply mt-5;
+  section {
+    @apply py-4;
   }
   h1 {
     @apply text-2xl text-center mb-3;
@@ -19,7 +24,7 @@
     @apply text-xl;
   }
   p {
-    @apply font-light;
+    @apply font-light mb-6;
   }
 }
 
@@ -36,6 +41,25 @@
   .mesh-gradient {
     @apply opacity-25 rounded-full blur-3xl size-96 md:size-128 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2;
   }
+
+  header .indicator {
+    @apply size-1.5 rounded-full bg-gradient-to-r from-purple-500 to-orange-500 absolute bottom-0.5 left-1/2 transition duration-300 invisible;
+  }
+
+  header ul li[data-to-scrollspy-id="projects"].active-scroll-spy ~ .indicator {
+    @apply transform -translate-x-1/2 visible;
+  }
+  header ul li[data-to-scrollspy-id="about-me"].active-scroll-spy ~ .indicator {
+    @apply transform -translate-x-[6.6875rem] visible;
+  }
+
+  .card--experience {
+    @apply size-16 rounded-full !important;
+  }
+
+  .iconify {
+    @apply opacity-75;
+  }
 }
 
 .card--glass {
@@ -47,40 +71,10 @@
   border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-.shine {
-  position: relative;
-  overflow: hidden;
+section,
+.hero {
+  min-height: calc(100vh - 3.25rem);
 }
-
-@keyframes shine {
-  0% {
-    transform: rotate(30deg) translateX(-200%);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    transform: rotate(30deg) translateX(200%);
-    opacity: 0;
-  }
+section {
+  scroll-margin-top: 3.25rem;
 }
-
-/* .shine::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    to bottom right,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.05)
-  );
-  opacity: 0.8;
-  transform: rotate(30deg);
-  animation: shine 3s infinite;
-}
- */

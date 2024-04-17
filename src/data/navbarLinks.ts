@@ -1,7 +1,7 @@
 const NAVBAR_LINKS = [
   {
-    href: "",
-    title: "Home",
+    href: "about-me",
+    title: "About Me",
   },
   {
     href: "projects",

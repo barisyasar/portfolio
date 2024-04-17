@@ -1,16 +1,21 @@
-import Link from "next/link";
 import NAVBAR_LINKS from "@/data/navbarLinks";
+import Indicator from "./Indicator";
 
 function NavigationList() {
   return (
-    <ul className="flex justify-center items-center h-full">
+    <ul className="flex justify-center items-center h-full relative">
       {NAVBAR_LINKS.map((nl) => (
-        <li className="w-[6.5rem] text-center" key={nl.href}>
-          <Link className="text-stale-950" href={`/${nl.href}`} prefetch>
+        <li
+          className="w-[6.5rem] text-center"
+          key={nl.href}
+          data-to-scrollspy-id={nl.href}
+        >
+          <a className="text-stale-950" href={`/#${nl.href}`}>
             {nl.title}
-          </Link>
+          </a>
         </li>
       ))}
+      <Indicator />
     </ul>
   );
 }

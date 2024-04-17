@@ -7,7 +7,7 @@ type ProjectCardProps = {
 
 function ProjectCard({ title }: ProjectCardProps) {
   return (
-    <div className="card--glass p-2 md:p-4 shine h-full relative">
+    <div className="card--glass p-2 md:p-4 h-full relative">
       <h2 className="absolute bottom-2 left-2 md:bottom-4 md:left-4">
         {title}
       </h2>
