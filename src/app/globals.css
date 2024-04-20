@@ -57,8 +57,20 @@ html {
     @apply size-16 rounded-full !important;
   }
 
+  .card--experience .iconify {
+    @apply p-2;
+  }
+
   .iconify {
     @apply opacity-75;
+  }
+
+  .stacked-list .card--experience {
+    @apply size-8 !important;
+  }
+
+  .stacked-list .card--experience .iconify {
+    @apply p-1;
   }
 }
 

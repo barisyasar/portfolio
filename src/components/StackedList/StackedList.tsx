@@ -1,18 +1,42 @@
+import { Experience } from "@/types/experience.type";
 import ExperienceCard from "../ExperienceCard";
+import Transition from "../Transition";
 
 type StackedListProps = {
-  list?: string[];
+  list?: Experience[];
+};
+
+const staggeredAnimation = {
+  initial: {
+    opacity: 0,
+    x: -50,
+  },
+  animate: { opacity: 1, x: 0 },
 };
 
 function StackedList({ list }: StackedListProps) {
   return (
-    <div className="stacked-list">
+    <Transition
+      initial="initial"
+      whileInView="animate"
+      className="stacked-list flex gap-2"
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{
+        staggerChildren: 0.1,
+        delayChildren: 0.5,
+      }}
+    >
       {list?.map((item) => (
-        <div className="stacked-list__item" key={item}>
-          <ExperienceCard icon={item} />
-        </div>
+        <Transition
+          variants={staggeredAnimation}
+          className="stacked-list__item"
+          key={item.title}
+          transition={{ bounce: 0 }}
+        >
+          <ExperienceCard experience={item} />
+        </Transition>
       ))}
-    </div>
+    </Transition>
   );
 }
 

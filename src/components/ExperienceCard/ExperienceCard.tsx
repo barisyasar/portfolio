@@ -1,9 +1,14 @@
 import Iconify from "../Iconify";
+import { Experience } from "@/types/experience.type";
 
-function ExperienceCard({ icon }: { icon: string }) {
+type ExperienceCardProps = {
+  experience: Experience;
+};
+
+function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
     <div className="card--glass card--experience">
-      <Iconify icon={icon} />
+      <Iconify icon={experience.icon} />
     </div>
   );
 }
