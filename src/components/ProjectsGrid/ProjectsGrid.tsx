@@ -1,15 +1,15 @@
-import { EXPERIENCE_LIST } from "@/data/experiences";
+import PROJECTS from "@/data/projects";
 import ProjectCard from "../ProjectCard";
 import Transition from "../Transition";
 
 function ProjectsGrid() {
   return (
-    <div className="container">
+    <div className="container p-3 overflow-hidden">
       <Transition
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
         initial="initial"
         whileInView="animate"
-        className="grid grid-cols-2 gap-3 md:gap-4 auto-rows-[250px]"
+        className="grid grid-cols-2 gap-3 md:gap-4  auto-rows-[225px] md:auto-rows-[250px]"
       >
         <Transition
           variants={{
@@ -21,14 +21,7 @@ function ProjectsGrid() {
           }}
           className="md:row-span-2"
         >
-          <ProjectCard
-            title="Tripy"
-            techs={[
-              EXPERIENCE_LIST[1],
-              EXPERIENCE_LIST[15],
-              EXPERIENCE_LIST[19],
-            ]}
-          />
+          <ProjectCard project={PROJECTS[0]} />
         </Transition>
         <Transition
           variants={{
@@ -42,14 +35,7 @@ function ProjectsGrid() {
             delay: 0.3,
           }}
         >
-          <ProjectCard
-            title="Enerjey"
-            techs={[
-              EXPERIENCE_LIST[1],
-              EXPERIENCE_LIST[2],
-              EXPERIENCE_LIST[12],
-            ]}
-          />
+          <ProjectCard project={PROJECTS[1]} />
         </Transition>
         <Transition
           variants={{
@@ -64,10 +50,7 @@ function ProjectsGrid() {
           }}
           className="col-span-2 md:col-span-1 md:col-end-3"
         >
-          <ProjectCard
-            title="AND"
-            techs={[EXPERIENCE_LIST[9], EXPERIENCE_LIST[6], EXPERIENCE_LIST[7]]}
-          />
+          <ProjectCard project={PROJECTS[2]} />
         </Transition>
       </Transition>
     </div>

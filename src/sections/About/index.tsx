@@ -4,15 +4,17 @@ import Intro from "@/components/Intro";
 function About() {
   return (
     <section id="about-me">
-      <div className="hero">HERO</div>
+      <div className="hero text-center"></div>
 
-      <Intro
-        title="Experience"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda et
+      <div>
+        <Intro
+          title="Experience"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda et
         sed minima nobis dolorem quae ad libero, magni vitae? Obcaecati ullam
         sequi, maiores officia repellendus rem hic? Ut, incidunt! Autem?"
-      />
-      <ExperienceList />
+        />
+        <ExperienceList />
+      </div>
     </section>
   );
 }

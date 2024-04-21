@@ -1,13 +1,9 @@
 import Link from "next/link";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 import StackedList from "../StackedList";
-import { Experience } from "@/types/experience.type";
 import Transition from "../Transition";
-
-type ProjectCardProps = {
-  title?: string;
-  techs?: Experience[];
-};
+import { Project } from "@/types/project.type";
+import Image from "next/image";
 
 const fadeInLeft = {
   initial: {
@@ -25,7 +21,7 @@ const fadeInRight = {
   animate: { opacity: 1, x: 0 },
 };
 
-function ProjectCard({ title, techs }: ProjectCardProps) {
+function ProjectCard({ project }: { project: Project }) {
   return (
     <Transition
       initial="initial"
@@ -37,14 +33,14 @@ function ProjectCard({ title, techs }: ProjectCardProps) {
       viewport={{ once: true, amount: 0.1 }}
     >
       <Transition
-        className="absolute top-2 left-2 md:top-4 md:left-4"
+        className="absolute top-2 left-2 md:top-4 md:left-4 z-10"
         variants={fadeInLeft}
         transition={{ bounce: 0 }}
       >
-        <h2>{title}</h2>
+        <h2>{project.title}</h2>
       </Transition>
       <Transition
-        className="absolute top-2 right-2 md:top-4 md:right-4 size-7 rounded-full flex items-center justify-center bg-[rgb(255,255,255,.5)] shadow-sm"
+        className="absolute top-2 right-2 md:top-4 md:right-4 size-7 rounded-full flex items-center justify-center bg-[rgb(255,255,255,.5)] shadow-sm z-10"
         variants={fadeInRight}
         transition={{ bounce: 0 }}
       >
@@ -52,8 +48,9 @@ function ProjectCard({ title, techs }: ProjectCardProps) {
           <ChevronRightIcon className="size-5 ms-0.5 md:ms:1 stroke-1.5" />
         </Link>
       </Transition>
-      <div className="absolute bottom-2 left-2 md:bottom-4 md:left-4">
-        <StackedList list={techs} />
+      <Image src={project.img} alt={project.title} fill />
+      <div className="absolute bottom-2 left-2 md:bottom-4 md:left-4 z-10">
+        <StackedList list={project.techs} />
       </div>
     </Transition>
   );
