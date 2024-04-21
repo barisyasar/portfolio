@@ -6,10 +6,10 @@ function ProjectsGrid() {
   return (
     <div className="container">
       <Transition
-        viewport={{ once: true, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
         initial="initial"
         whileInView="animate"
-        className="grid grid-cols-2 gap-3 md:gap-4 auto-rows-[220px]"
+        className="grid grid-cols-2 gap-3 md:gap-4 auto-rows-[250px]"
       >
         <Transition
           variants={{
