@@ -17,7 +17,7 @@ function ExperienceList() {
         transition={{
           staggerChildren: 0.15,
         }}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.4 }}
       >
         {EXPERIENCE_LIST.map((experience) => (
           <Transition

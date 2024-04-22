@@ -27,32 +27,6 @@ const config: Config = {
       size: {
         "128": "30rem",
       },
-      keyframes: {
-        meshOne: {
-          "0%": {
-            top: "0%",
-            left: "0%",
-          },
-          "100%": {
-            top: "100%",
-            left: "100%",
-          },
-        },
-        meshTwo: {
-          "0%": {
-            top: "100%",
-            left: "0%",
-          },
-          "100%": {
-            top: "0%",
-            left: "100%",
-          },
-        },
-      },
-      animation: {
-        meshOne: "meshOne 6s ease-in-out infinite alternate",
-        meshTwo: "meshTwo 6s ease-in-out infinite alternate",
-      },
     },
   },
 };

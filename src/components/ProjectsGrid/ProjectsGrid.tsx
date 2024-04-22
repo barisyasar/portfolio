@@ -4,9 +4,9 @@ import Transition from "../Transition";
 
 function ProjectsGrid() {
   return (
-    <div className="container p-3 overflow-hidden">
+    <div className="container">
       <Transition
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.4 }}
         initial="initial"
         whileInView="animate"
         className="grid grid-cols-2 gap-3 md:gap-4  auto-rows-[225px] md:auto-rows-[250px]"
@@ -18,6 +18,10 @@ function ProjectsGrid() {
               x: 0,
               opacity: 1,
             },
+          }}
+          transition={{
+            bounce: 0,
+            ease: "linear",
           }}
           className="md:row-span-2"
         >
@@ -33,13 +37,15 @@ function ProjectsGrid() {
           }}
           transition={{
             delay: 0.3,
+            bounce: 0,
+            ease: "linear",
           }}
         >
           <ProjectCard project={PROJECTS[1]} />
         </Transition>
         <Transition
           variants={{
-            initial: { y: 25, opacity: 0 },
+            initial: { y: 100, opacity: 0 },
             animate: {
               y: 0,
               opacity: 1,
@@ -47,6 +53,8 @@ function ProjectsGrid() {
           }}
           transition={{
             delay: 0.15,
+            bounce: 0,
+            ease: "linear",
           }}
           className="col-span-2 md:col-span-1 md:col-end-3"
         >

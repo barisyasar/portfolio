@@ -36,10 +36,10 @@ html {
 
 @layer components {
   .mesh-gradient-container {
-    @apply fixed z-0 w-full h-screen max-w-screen-xl left-1/2 transform -translate-x-1/2;
+    @apply fixed z-0 w-full h-screen left-1/2 transform -translate-x-1/2 max-w-screen-xl;
   }
   .mesh-gradient {
-    @apply opacity-25 rounded-full blur-3xl size-96 md:size-128 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2;
+    @apply opacity-25 rounded-full blur-2xl size-128 absolute transform;
   }
 
   header .indicator {
@@ -54,15 +54,11 @@ html {
   }
 
   .card--experience {
-    @apply size-14 md:size-16 rounded-full !important;
+    @apply size-14 md:size-16 !important;
   }
 
   .card--experience .iconify {
     @apply p-1.5 md:p-2;
-  }
-
-  .iconify {
-    @apply opacity-75;
   }
 
   .stacked-list .card--experience {

@@ -1,4 +1,4 @@
-const RIGHT_ARROW = "ep:arrow-right";
+const RIGHT_ARROW = "uiw:right";
 const NEXTJS = "teenyicons:nextjs-solid";
 const REACT = "teenyicons:react-solid";
 const REDUX = "simple-icons:redux";

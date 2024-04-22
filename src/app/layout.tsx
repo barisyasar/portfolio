@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className + " bg-gray-100 text-neutral-950"}>
+      <body className={montserrat.className + " bg-black text-white"}>
         {/* <div className="w-px bg-red-900 h-screen fixed z-10 left-1/2 top-0 transform -translate-x-1/2" /> */}
         <MeshGradientBackground />
         <Header />

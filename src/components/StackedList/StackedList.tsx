@@ -23,7 +23,7 @@ function StackedList({ list }: StackedListProps) {
       viewport={{ once: true, amount: 0.1 }}
       transition={{
         staggerChildren: 0.1,
-        delayChildren: 0.5,
+        delayChildren: 0.6,
       }}
     >
       {list?.map((item) => (

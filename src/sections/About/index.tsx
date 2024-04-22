@@ -4,7 +4,7 @@ import Intro from "@/components/Intro";
 function About() {
   return (
     <section id="about-me">
-      <div className="hero text-center"></div>
+      <div className="hero text-center">hero</div>
 
       <div>
         <Intro
