@@ -7,9 +7,9 @@ import Header from "@/components/Header";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Barış Yaşar",
+  title: "Barış Yaşar Portfolio as a Full-Stack Web Developer",
   description:
-    "Everything you need to know about me as a Full-Stack Web Developer",
+    "Everything you need to know about my developer skills and experiences.",
 };
 
 export default function RootLayout({

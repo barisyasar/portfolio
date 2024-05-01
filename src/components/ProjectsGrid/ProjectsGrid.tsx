@@ -9,7 +9,7 @@ function ProjectsGrid() {
         viewport={{ once: true, amount: 0.4 }}
         initial="initial"
         whileInView="animate"
-        className="grid grid-cols-2 gap-3 md:gap-4  auto-rows-[225px] md:auto-rows-[250px]"
+        className="grid grid-cols-2 gap-3 md:gap-4  auto-rows-[225px] md:auto-rows-[250px] overflow-hidden"
       >
         <Transition
           variants={{

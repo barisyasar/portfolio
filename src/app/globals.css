@@ -12,7 +12,7 @@ html {
   }
 
   main {
-    @apply mt-2 md:mt-[3.25rem];
+    @apply pt-2 md:pt-[3.25rem];
   }
   section {
     @apply py-14;
@@ -52,6 +52,9 @@ html {
   header ul li[data-to-scrollspy-id="about-me"].active-scroll-spy ~ .indicator {
     @apply transform -translate-x-[6.6875rem] visible;
   }
+  header ul li[data-to-scrollspy-id="contact"].active-scroll-spy ~ .indicator {
+    @apply transform translate-x-[6.5rem] visible;
+  }
 
   .card--experience {
     @apply size-14 md:size-16 !important;
@@ -70,6 +73,19 @@ html {
   }
   .card--glass {
     @apply rounded-xl md:rounded-2xl;
+  }
+  textarea.card--glass,
+  input.card--glass {
+    @apply w-full p-3 rounded-xl;
+  }
+  input,
+  textarea,
+  button {
+    @apply focus-visible:outline outline-zinc-500 placeholder:text-zinc-400 font-light;
+  }
+  input + textarea,
+  input + input {
+    @apply mt-3;
   }
 }
 
