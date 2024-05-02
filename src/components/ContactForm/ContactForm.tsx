@@ -32,7 +32,6 @@ function ContactForm() {
 
     if (res.ok) {
       reset();
-      console.log(await res.json());
     } else {
       setError("root", {
         message: "Your message could not submitted.",

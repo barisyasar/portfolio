@@ -1,3 +1,4 @@
+import { sendMail } from "@/lib/mail";
 import { contactSchema } from "@/types/contact.type";
 import { NextResponse } from "next/server";
 
@@ -13,7 +14,17 @@ export async function POST(req: Request) {
         status: 400,
       }
     );
-  return NextResponse.json({
-    message: "Your message is successfully sent.",
-  });
+
+  const res = await sendMail(body);
+  if (res)
+    return NextResponse.json({
+      message: "Your message is successfully sent.",
+    });
+  else
+    return NextResponse.json(
+      {
+        message: "Your message is couldn't sent.",
+      },
+      { status: 500 }
+    );
 }
