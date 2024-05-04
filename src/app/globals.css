@@ -76,7 +76,7 @@ html {
   }
   textarea.card--glass,
   input.card--glass {
-    @apply w-full p-3 rounded-xl;
+    @apply p-3 rounded-xl block;
   }
   input,
   textarea,

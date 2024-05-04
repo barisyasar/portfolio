@@ -2,6 +2,15 @@
 import { TContactSchema, contactSchema } from "@/types/contact.type";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
+
+const variants = {
+  initial: { width: 0, opacity: 0 },
+  animate: {
+    width: "100%",
+    opacity: 1,
+  },
+};
 
 function ContactForm() {
   const {
@@ -41,8 +50,18 @@ function ContactForm() {
 
   return (
     <div className="container max-w-screen-md">
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input
+      <motion.form
+        // className="flex flex-col items-center"
+        viewport={{ once: true, amount: 0.4 }}
+        initial="initial"
+        whileInView="animate"
+        onSubmit={handleSubmit(onSubmit)}
+        transition={{
+          staggerChildren: 0.3,
+        }}
+      >
+        <motion.input
+          variants={variants}
           {...register("name")}
           type="text"
           placeholder="Name"
@@ -51,7 +70,8 @@ function ContactForm() {
         {errors.name && (
           <div className="text-red-500 m-2">{`${errors.name.message}`}</div>
         )}
-        <input
+        <motion.input
+          variants={variants}
           {...register("surname")}
           type="text"
           placeholder="Surname"
@@ -60,7 +80,8 @@ function ContactForm() {
         {errors.surname && (
           <div className="text-red-500 m-2">{`${errors.surname.message}`}</div>
         )}
-        <input
+        <motion.input
+          variants={variants}
           type="text"
           {...register("email")}
           placeholder="E-mail"
@@ -69,7 +90,8 @@ function ContactForm() {
         {errors.email && (
           <div className="text-red-500 m-2">{`${errors.email.message}`}</div>
         )}
-        <input
+        <motion.input
+          variants={variants}
           {...register("subject")}
           type="text"
           placeholder="Subject"
@@ -78,7 +100,8 @@ function ContactForm() {
         {errors.subject && (
           <div className="text-red-500 m-2">{`${errors.subject.message}`}</div>
         )}
-        <textarea
+        <motion.textarea
+          variants={variants}
           {...register("message")}
           rows={3}
           placeholder="Message"
@@ -87,13 +110,14 @@ function ContactForm() {
         {errors.message && (
           <div className="text-red-500 m-2">{`${errors.message.message}`}</div>
         )}
-        <button
+        <motion.button
+          variants={variants}
           disabled={isSubmitting}
           type="submit"
-          className="card--glass w-24 h-10 rounded-lg mt-2 mx-auto block active:opacity-90 disabled:opacity-50"
+          className="card--glass h-10 rounded-xl mt-3 block active:opacity-90 disabled:opacity-50"
         >
           {isSubmitting ? "Submitting" : "Submit"}
-        </button>
+        </motion.button>
         {errors.root && (
           <div className="text-red-500 my-2 text-center">{`${errors.root.message}`}</div>
         )}
@@ -102,7 +126,7 @@ function ContactForm() {
             Your message is sent.
           </div>
         )}
-      </form>
+      </motion.form>
     </div>
   );
 }

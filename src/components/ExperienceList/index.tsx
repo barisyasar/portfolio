@@ -15,7 +15,7 @@ function ExperienceList() {
         whileInView="visible"
         className="flex gap-3 sm:gap-4 flex-wrap justify-center"
         transition={{
-          staggerChildren: 0.15,
+          staggerChildren: 0.1,
         }}
         viewport={{ once: true, amount: 0.4 }}
       >
