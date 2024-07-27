@@ -6,7 +6,7 @@ type IntroProps = {
 function Intro({ title, text }: IntroProps) {
   return (
     <article className="container">
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <p className="text-center">{text}</p>
     </article>
   );

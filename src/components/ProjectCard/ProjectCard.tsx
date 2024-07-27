@@ -39,7 +39,7 @@ function ProjectCard({ project }: { project: Project }) {
         variants={fadeInLeft}
         transition={{ bounce: 0 }}
       >
-        <h2>{project.title}</h2>
+        <h3>{project.title}</h3>
       </Transition>
       <Transition
         className="absolute top-2 right-2 md:top-4 md:right-4 size-7 rounded-full flex items-center justify-center bg-[rgb(255,255,255,.2)] shadow-sm z-10"

@@ -11,16 +11,13 @@ html {
     @apply text-balance;
   }
 
-  main {
-    @apply pt-2 md:pt-[3.25rem];
-  }
-  section {
-    @apply py-14;
-  }
   h1 {
-    @apply text-2xl text-center mb-3;
+    @apply text-5xl mb-3 font-medium;
   }
   h2 {
+    @apply text-2xl text-center mb-3;
+  }
+  h3 {
     @apply text-xl;
   }
   p {
@@ -99,8 +96,8 @@ html {
 
 section,
 .hero {
-  min-height: calc(100vh - 3.25rem);
+  min-height: calc(100vh);
 }
 section {
-  scroll-margin-top: 3.25rem;
+  scroll-margin-top: 5rem;
 }

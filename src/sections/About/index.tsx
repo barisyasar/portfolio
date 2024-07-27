@@ -1,14 +1,15 @@
 import ExperienceList from "@/components/ExperienceList";
+import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 
 function About() {
   return (
     <section id="about-me">
-      <div className="hero text-center">hero</div>
+      <Hero />
 
-      <div>
+      <div className="my-8">
         <Intro
-          title="Experience"
+          title="Experiences"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda et
         sed minima nobis dolorem quae ad libero, magni vitae? Obcaecati ullam
         sequi, maiores officia repellendus rem hic? Ut, incidunt! Autem?"
