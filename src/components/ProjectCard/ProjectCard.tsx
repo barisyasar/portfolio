@@ -33,9 +33,13 @@ function ProjectCard({ project }: { project: Project }) {
       viewport={{ once: true, amount: 0.1 }}
     >
       <div className="flex items-start justify-between mb-3">
-        <Transition variants={fadeInLeft} transition={{ bounce: 0 }}>
-          <h3>{project.title}</h3>
-        </Transition>
+        <Image
+          src={"/images/" + project.img}
+          alt={project.title}
+          className="rounded-lg"
+          width={175}
+          height={175}
+        />
         <Transition variants={fadeInRight} transition={{ bounce: 0 }}>
           {project?.link && (
             <a href={project.link} target="_blank">
@@ -44,7 +48,10 @@ function ProjectCard({ project }: { project: Project }) {
           )}
         </Transition>
       </div>
-      {/* <Image src={project.img} alt={project.title} fill /> */}
+
+      <Transition variants={fadeInLeft} transition={{ bounce: 0 }}>
+        <h3 className="mb-1">{project.title}</h3>
+      </Transition>
       <p className="text-wrap flex-grow">{project.text}</p>
       <StackedList list={project.techs} />
     </Transition>

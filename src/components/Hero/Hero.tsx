@@ -1,11 +1,20 @@
 import { GITHUB, LINKEDIN_ICON } from "@/data/icons";
 import Icon from "../Iconify";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="flex justify-center items-center text-center md:text-start">
       <article className="flex items-center gap-5 flex-col md:flex-row">
-        <div className="card--glass h-64 w-64 rounded-full"></div>
+        <div className="card--glass rounded-full p-2.5">
+          <Image
+            src="/images/profile.png"
+            className="rounded-full"
+            alt="Description of image"
+            width={220}
+            height={220}
+          />
+        </div>
         <div className="flex flex-col">
           <h1>Barış Yaşar</h1>
           <p className="text-gray-400">Mid Level Full-Stack Developer</p>

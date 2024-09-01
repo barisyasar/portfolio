@@ -3,7 +3,7 @@ import ProjectsGrid from "@/components/ProjectsGrid";
 
 function Projects() {
   return (
-    <section id="projects">
+    <section id="projects" className="flex flex-col justify-center">
       <Intro title="Highlighted Projects">
         <p className="text-center">
           As a full-stack developer, I&apos;ve successfully{" "}

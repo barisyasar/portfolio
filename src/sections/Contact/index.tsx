@@ -3,7 +3,7 @@ import Intro from "@/components/Intro";
 
 function Contact() {
   return (
-    <section id="contact">
+    <section id="contact" className="flex flex-col justify-center">
       <Intro title="Get In Touch">
         <p className="text-center">
           I&apos;m always excited to connect! Whether you have a project in

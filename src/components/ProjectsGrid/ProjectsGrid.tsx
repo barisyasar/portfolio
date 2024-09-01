@@ -14,12 +14,12 @@ function ProjectsGrid() {
       >
         <Transition
           variants={{
-            initial: { x: -50, opacity: 0 },
+            initial: { y: -50, opacity: 0 },
             animate: {
-              x: 0,
+              y: 0,
               opacity: 1,
             },
-            exit: { x: -50, opacity: 0 },
+            exit: { y: -50, opacity: 0 },
           }}
           transition={{
             bounce: 0,
@@ -30,9 +30,9 @@ function ProjectsGrid() {
         </Transition>
         <Transition
           variants={{
-            initial: { x: 50, opacity: 0 },
+            initial: { y: 50, opacity: 0 },
             animate: {
-              x: 0,
+              y: 0,
               opacity: 1,
             },
           }}

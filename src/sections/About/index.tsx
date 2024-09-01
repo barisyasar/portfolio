@@ -3,7 +3,7 @@ import Intro from "@/components/Intro";
 
 function About() {
   return (
-    <section id="about-me">
+    <section id="about-me" className="flex flex-col justify-center">
       <Intro title="A Quick Recap">
         <p className="text-center">
           With 4 years of software experience and over 2 years of professional

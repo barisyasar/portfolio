@@ -97,7 +97,6 @@ html {
 
 section {
   min-height: calc(100vh);
-  scroll-margin-top: 5rem;
 }
 
 section + section {
