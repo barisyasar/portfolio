@@ -1,13 +1,15 @@
+import { ReactNode } from "react";
+
 type IntroProps = {
   title: string;
-  text: string;
+  children: ReactNode;
 };
 
-function Intro({ title, text }: IntroProps) {
+function Intro({ title, children }: IntroProps) {
   return (
     <article className="container">
       <h2>{title}</h2>
-      <p className="text-center">{text}</p>
+      {children}
     </article>
   );
 }

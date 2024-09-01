@@ -1,49 +1,28 @@
-const RIGHT_ARROW = "uiw:right";
-const NEXTJS = "teenyicons:nextjs-solid";
-const REACT = "teenyicons:react-solid";
-const REDUX = "simple-icons:redux";
-const TYPESCRIPT = "bxl:typescript";
-const EXPRESS = "simple-icons:express";
-const APOLLOGRAPHQL = "simple-icons:apollographql";
-const AWS = "mdi:aws";
-const MONGODB = "teenyicons:mongodb-solid";
-const POSTGRESQL = "bxl:postgresql";
-const NODEJS = "teenyicons:nodejs-solid";
-const SWR = "simple-icons:swr";
-const GRAPHQL = "teenyicons:graphql-solid";
-const API = "mdi:api";
-const GIT = "teenyicons:git-solid";
-const GITHUB = "teenyicons:github-solid";
-const FRAMERMOTION = "devicon:framermotion";
-const TAILWIND = "teenyicons:tailwind-solid";
-const SASS = "mdi:sass";
-const MATERIAL_UI = "mdi:material-ui";
-const BOOTSTRAP = "mdi:bootstrap";
-const JIRA = "mdi:jira";
-const SLACK = "mdi:slack";
-
-export {
-  RIGHT_ARROW,
-  NEXTJS,
-  REACT,
-  REDUX,
-  TYPESCRIPT,
-  EXPRESS,
-  APOLLOGRAPHQL,
-  AWS,
-  MONGODB,
-  POSTGRESQL,
-  NODEJS,
-  SWR,
-  GRAPHQL,
-  API,
-  GIT,
-  GITHUB,
-  FRAMERMOTION,
-  TAILWIND,
-  SASS,
-  MATERIAL_UI,
-  BOOTSTRAP,
-  JIRA,
-  SLACK,
-};
+export const NEXTJS = "teenyicons:nextjs-solid";
+export const REACT = "teenyicons:react-solid";
+export const REDUX = "simple-icons:redux";
+export const TYPESCRIPT = "bxl:typescript";
+export const EXPRESS = "simple-icons:express";
+export const APOLLOGRAPHQL = "simple-icons:apollographql";
+export const AWS = "mdi:aws";
+export const MONGODB = "teenyicons:mongodb-solid";
+export const POSTGRESQL = "bxl:postgresql";
+export const NODEJS = "teenyicons:nodejs-solid";
+export const SWR = "simple-icons:swr";
+export const GRAPHQL = "teenyicons:graphql-solid";
+export const API = "mdi:api";
+export const GIT = "teenyicons:git-solid";
+export const GITHUB = "teenyicons:github-solid";
+export const FRAMERMOTION = "devicon:framermotion";
+export const TAILWIND = "teenyicons:tailwind-solid";
+export const SASS = "mdi:sass";
+export const MATERIAL_UI = "mdi:material-ui";
+export const BOOTSTRAP = "mdi:bootstrap";
+export const JIRA = "mdi:jira";
+export const SLACK = "mdi:slack";
+export const PAYPAL_ICON = "ic:round-paypal";
+export const STRIPE_ICON = "bi:stripe";
+export const IYZICO_ICON = "arcticons:iyzico";
+export const QUERY_ICON = "simple-icons:reactquery";
+export const LINKEDIN_ICON = "mdi:linkedin";
+export const NEW_TAB_ICON = "mdi:open-in-new";

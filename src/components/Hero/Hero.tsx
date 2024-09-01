@@ -1,14 +1,33 @@
+import { GITHUB, LINKEDIN_ICON } from "@/data/icons";
+import Icon from "../Iconify";
+
 const Hero = () => {
   return (
-    <div className="hero flex justify-center items-center border">
-      <article className="flex items-center gap-5">
+    <section className="flex justify-center items-center text-center md:text-start">
+      <article className="flex items-center gap-5 flex-col md:flex-row">
         <div className="card--glass h-64 w-64 rounded-full"></div>
         <div className="flex flex-col">
           <h1>Barış Yaşar</h1>
-          <p>Full-Stack Web Developer</p>
+          <p className="text-gray-400">Mid Level Full-Stack Developer</p>
+          <div className="flex gap-3 items-center justify-center md:justify-start">
+            <a
+              className="link"
+              href="https://www.linkedin.com/in/bar%C4%B1%C5%9F-ya%C5%9Far-06711a201/"
+              target="_blank"
+            >
+              <Icon icon={LINKEDIN_ICON} />
+            </a>
+            <a
+              href="https://github.com/barisyasar"
+              target="_blank"
+              className="link"
+            >
+              <Icon icon={GITHUB} />
+            </a>
+          </div>
         </div>
       </article>
-    </div>
+    </section>
   );
 };
 

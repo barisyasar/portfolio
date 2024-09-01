@@ -10,7 +10,7 @@ function ProjectsGrid() {
         initial="initial"
         whileInView="animate"
         exit="exit"
-        className="grid grid-cols-2 gap-3 md:gap-4  auto-rows-[225px] md:auto-rows-[250px] overflow-hidden"
+        className="grid grid-cols-1 md:grid-cols-2 gap-5"
       >
         <Transition
           variants={{
@@ -25,7 +25,6 @@ function ProjectsGrid() {
             bounce: 0,
             ease: "linear",
           }}
-          className="md:row-span-2"
         >
           <ProjectCard project={PROJECTS[0]} />
         </Transition>
@@ -58,7 +57,7 @@ function ProjectsGrid() {
             bounce: 0,
             ease: "linear",
           }}
-          className="col-span-2 md:col-span-1 md:col-end-3"
+          className="md:col-span-2"
         >
           <ProjectCard project={PROJECTS[2]} />
         </Transition>

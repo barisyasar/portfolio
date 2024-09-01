@@ -50,9 +50,8 @@ function ContactForm() {
   };
 
   return (
-    <div className="container max-w-screen-md">
+    <div className="container max-w-screen-md pb-10">
       <motion.form
-        // className="flex flex-col items-center"
         viewport={{ once: true, amount: 0.4 }}
         initial="initial"
         whileInView="animate"

@@ -21,7 +21,7 @@ html {
     @apply text-xl;
   }
   p {
-    @apply font-light mb-6;
+    @apply mb-6;
   }
 }
 
@@ -33,7 +33,7 @@ html {
 
 @layer components {
   .mesh-gradient-container {
-    @apply fixed z-0 w-full h-screen left-1/2 transform -translate-x-1/2 max-w-screen-xl;
+    @apply fixed z-[-1] w-full h-screen left-1/2 transform -translate-x-1/2 max-w-screen-xl;
   }
   .mesh-gradient {
     @apply opacity-25 rounded-full blur-2xl size-128 absolute transform;
@@ -61,8 +61,9 @@ html {
     @apply p-1.5 md:p-2;
   }
 
+  .link .iconify,
   .stacked-list .card--experience {
-    @apply size-8 !important;
+    @apply size-9 !important;
   }
 
   .stacked-list .card--experience .iconify {
@@ -94,10 +95,11 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-section,
-.hero {
-  min-height: calc(100vh);
-}
 section {
+  min-height: calc(100vh);
   scroll-margin-top: 5rem;
+}
+
+section + section {
+  margin-top: 5rem;
 }

@@ -19,7 +19,7 @@ function StackedList({ list }: StackedListProps) {
     <Transition
       initial="initial"
       whileInView="animate"
-      className="stacked-list flex gap-2"
+      className="stacked-list flex gap-3"
       viewport={{ once: true, amount: 0.1 }}
       transition={{
         staggerChildren: 0.1,

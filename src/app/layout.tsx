@@ -4,10 +4,13 @@ import "./globals.css";
 import MeshGradientBackground from "@/components/MeshGradientBackground";
 import Header from "@/components/Header";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  weight: ["400", "600", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "Barış Yaşar Portfolio as a Full-Stack Web Developer",
+  title: "Barış Yaşar Portfolio as a Mid Level Full-Stack Developer",
   description:
     "Everything you need to know about my developer skills and experiences.",
 };
