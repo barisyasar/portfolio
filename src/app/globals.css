@@ -96,7 +96,8 @@ html {
 }
 
 section {
-  min-height: calc(100vh);
+  min-height: calc(100vh - 5rem);
+  scroll-margin-top: 5rem;
 }
 
 section + section {
