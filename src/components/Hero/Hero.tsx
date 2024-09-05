@@ -8,7 +8,7 @@ const Hero = () => {
       <article className="flex items-center gap-5 flex-col md:flex-row">
         <div className="card--glass rounded-full p-2.5">
           <Image
-            src="/images/profile.png"
+            src="/images/profile.jpg"
             className="rounded-full"
             alt="Description of image"
             width={220}

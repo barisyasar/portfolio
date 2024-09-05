@@ -10,9 +10,12 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Barış Yaşar Portfolio as a Mid Level Full-Stack Developer",
+  title: "Barış Yaşar - My Portfolio as a Mid Level Full-Stack Developer",
   description:
-    "Everything you need to know about my developer skills and experiences.",
+    "Everything you need to know about Barış Yaşar's developer skills and experiences.",
+  alternates: {
+    canonical: "https://barisyasar.vercel.app/",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className + " bg-black text-white"}>
-        {/* <div className="w-px bg-red-900 h-screen fixed z-10 left-1/2 top-0 transform -translate-x-1/2" /> */}
         <MeshGradientBackground />
         <Header />
         <main>{children}</main>
