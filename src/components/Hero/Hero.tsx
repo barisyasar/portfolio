@@ -1,10 +1,17 @@
-import { CV_ICON, GITHUB, LINKEDIN_ICON } from "@/data/icons";
+import {
+  CV_ICON,
+  DOUBLE_ARROW_DOWN_ICON,
+  GITHUB,
+  LINKEDIN_ICON,
+} from "@/data/icons";
 import Icon from "../Iconify";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="flex justify-center items-center text-center md:text-start mt-5 md:mt-0">
+    <section className="flex flex-col justify-between gap-10 items-center text-center md:text-start mt-5 md:mt-0">
+      <div></div>
       <article className="flex items-center gap-5 flex-col md:flex-row">
         <div className="card--glass rounded-full p-2.5">
           <Image
@@ -46,6 +53,9 @@ const Hero = () => {
           </div>
         </div>
       </article>
+      <Link href="#about-me" className="link animate-bounce text-gray-400">
+        <Icon icon={DOUBLE_ARROW_DOWN_ICON} />
+      </Link>
     </section>
   );
 };

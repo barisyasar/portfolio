@@ -27,3 +27,4 @@ export const QUERY_ICON = "simple-icons:reactquery";
 export const LINKEDIN_ICON = "mdi:linkedin";
 export const NEW_TAB_ICON = "mdi:open-in-new";
 export const CV_ICON = "academicons:cv";
+export const DOUBLE_ARROW_DOWN_ICON = "solar:double-alt-arrow-down-linear";
