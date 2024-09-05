@@ -1,18 +1,20 @@
-import { GITHUB, LINKEDIN_ICON } from "@/data/icons";
+import { CV_ICON, GITHUB, LINKEDIN_ICON } from "@/data/icons";
 import Icon from "../Iconify";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="flex justify-center items-center text-center md:text-start">
+    <section className="flex justify-center items-center text-center md:text-start mt-5 md:mt-0">
       <article className="flex items-center gap-5 flex-col md:flex-row">
         <div className="card--glass rounded-full p-2.5">
           <Image
             src="/images/profile.jpg"
             className="rounded-full"
             alt="Description of image"
+            layout="responsive"
             width={220}
             height={220}
+            sizes="(max-width: 1024px) 220px, (min-width: 1025px) 300px"
           />
         </div>
         <div className="flex flex-col">
@@ -32,6 +34,14 @@ const Hero = () => {
               className="link"
             >
               <Icon icon={GITHUB} />
+            </a>
+            <a
+              href="/files/baris_yasar_cv_en.pdf"
+              target="_blank"
+              className="link"
+              download
+            >
+              <Icon icon={CV_ICON} />
             </a>
           </div>
         </div>
