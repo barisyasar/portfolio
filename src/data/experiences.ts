@@ -39,7 +39,7 @@ const EXPERIENCE_LIST = [
   { title: "PostgreSQL", icon: POSTGRESQL },
   { title: "Node.js", icon: NODEJS },
   { title: "SWR", icon: SWR },
-  { title: "Tanstack QUERY", icon: QUERY_ICON },
+  { title: "Tanstack Query", icon: QUERY_ICON },
   { title: "GraphQL", icon: GRAPHQL },
   { title: "API", icon: API },
   { title: "Git", icon: GIT },
