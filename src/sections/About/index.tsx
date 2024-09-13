@@ -7,8 +7,7 @@ function About() {
       <Intro title="A Quick Recap">
         <p className="text-center">
           With 4 years of software experience and over 2 years of professional
-          work experience, I am a{" "}
-          <strong>mid level full-stack developer</strong>. I have
+          work experience, I am a <strong>full-stack developer</strong>. I have
           professional-level expertise in <strong>JavaScript</strong> and{" "}
           <strong>TypeScript</strong>. Currently, I am developing my projects
           using <strong>Next.js</strong> and <strong>Node.js</strong>.

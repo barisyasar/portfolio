@@ -11,9 +11,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Barış Yaşar - My Portfolio as a Mid Level Full-Stack Developer",
+  title: "Barış Yaşar - My Portfolio as a Full-Stack Developer",
   description:
-    "Barış Yaşar, a Mid Level Full-Stack Developer: everything you need to know about his skills and experience.",
+    "Barış Yaşar, a Full-Stack Developer: everything you need to know about his skills and experience.",
   alternates: {
     canonical: "https://barisyasar.vercel.app/",
   },

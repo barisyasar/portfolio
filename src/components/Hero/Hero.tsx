@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-col">
           <h1>Barış Yaşar</h1>
-          <p className="text-gray-400">Mid Level Full-Stack Developer</p>
+          <p className="text-gray-400">Full-Stack Developer</p>
           <div className="flex gap-3 items-center justify-center md:justify-start">
             <a
               className="link"
