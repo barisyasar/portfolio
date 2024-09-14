@@ -3,7 +3,6 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import MeshGradientBackground from "@/components/MeshGradientBackground";
 import Header from "@/components/Header";
-import ThemeProvider from "@/components/ThemeProvider";
 
 const montserrat = Montserrat({
   weight: ["400", "600", "700"],
@@ -26,12 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className + " dark"}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          <MeshGradientBackground />
-          <Header />
-          <main>{children}</main>
-        </ThemeProvider>
+      <body className={montserrat.className + " bg-black text-white"}>
+        <MeshGradientBackground />
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );

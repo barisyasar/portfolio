@@ -33,7 +33,7 @@ function StackedList({ list }: StackedListProps) {
           key={item.title}
           transition={{ bounce: 0 }}
         >
-          <ExperienceCard experience={item} side="top" />
+          <ExperienceCard experience={item} />
         </Transition>
       ))}
     </Transition>
