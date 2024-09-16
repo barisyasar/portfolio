@@ -7,8 +7,9 @@ type ExperienceCardProps = {
 
 function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
-    <div className="card--glass card--experience">
-      <Iconify icon={experience.icon} width="100%" opacity={0.9} fill="white" />
+    <div className="card--glass experience">
+      <Iconify icon={experience.icon} width={48} opacity={0.9} fill="white" />
+      <div className="experience__title">{experience.title}</div>
     </div>
   );
 }

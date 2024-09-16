@@ -53,20 +53,22 @@ html {
     @apply transform translate-x-[6.5rem] visible;
   }
 
-  .card--experience {
-    @apply size-14 md:size-16 !important;
+  .experience {
+    @apply size-24 relative flex flex-col gap-2 items-center justify-center text-center !important;
   }
-
-  .card--experience .iconify {
-    @apply p-1.5 md:p-2;
+  .experience .experience__title {
+    @apply text-xs;
   }
-
   .link .iconify,
-  .stacked-list .card--experience {
+  .stacked-list .experience {
     @apply size-9 !important;
   }
 
-  .stacked-list .card--experience .iconify {
+  .stacked-list .experience__title {
+    @apply hidden;
+  }
+
+  .stacked-list .experience .iconify {
     @apply p-1;
   }
   .card--glass {

@@ -29,7 +29,7 @@ function StackedList({ list }: StackedListProps) {
       {list?.map((item) => (
         <Transition
           variants={staggeredAnimation}
-          className="stacked-list__item"
+          className="stacked-list__item relative z-0"
           key={item.title}
           transition={{ bounce: 0 }}
         >
