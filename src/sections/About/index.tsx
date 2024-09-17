@@ -10,7 +10,7 @@ function About() {
           work experience, I am a <strong>full-stack developer</strong>. I have
           professional-level expertise in <strong>JavaScript</strong> and{" "}
           <strong>TypeScript</strong>. Currently, I am developing my projects
-          using <strong>Next.js</strong> and <strong>Node.js</strong>.
+          using <strong>Next</strong> and <strong>Node</strong>.
         </p>
       </Intro>
       <ExperienceList />

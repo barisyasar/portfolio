@@ -28,7 +28,7 @@ import {
 } from "./icons";
 
 const EXPERIENCE_LIST = [
-  { title: "Next.js", icon: NEXTJS },
+  { title: "Next", icon: NEXTJS },
   { title: "React", icon: REACT },
   { title: "Redux", icon: REDUX },
   { title: "TypeScript", icon: TYPESCRIPT },
@@ -37,7 +37,7 @@ const EXPERIENCE_LIST = [
   { title: "AWS", icon: AWS },
   { title: "MongoDB", icon: MONGODB },
   { title: "PostgreSQL", icon: POSTGRESQL },
-  { title: "Node.js", icon: NODEJS },
+  { title: "Node", icon: NODEJS },
   { title: "SWR", icon: SWR },
   { title: "React Query", icon: QUERY_ICON },
   { title: "GraphQL", icon: GRAPHQL },
