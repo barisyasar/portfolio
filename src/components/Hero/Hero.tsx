@@ -30,7 +30,7 @@ const Hero = () => {
           <div className="flex gap-3 items-center justify-center md:justify-start">
             <a
               className="link"
-              href="https://www.linkedin.com/in/bar%C4%B1%C5%9F-ya%C5%9Far-06711a201/"
+              href="https://www.linkedin.com/in/barisyasar5/"
               target="_blank"
             >
               <Icon icon={LINKEDIN_ICON} />
